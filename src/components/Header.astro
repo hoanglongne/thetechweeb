@@ -1,30 +1,35 @@
 ---
 import HeaderLink from '@/components/HeaderLink'
-import TwitterIcon from '@/components/icons/TwitterIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
 import MenuIcon from './icons/MenuIcon.astro'
 import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
+import Shape from '../assets/images/Shape.svg'
+import { Image } from 'astro:assets'
+import LinkedinIcon from './icons/linkedinIcon.astro'
 
 // ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
 	{
 		name: 'Github',
-		url: 'https://github.com/danielcgilibert/blog-template',
+		url: 'https://github.com/hoanglongne',
 		icon: GithubIcon
 	},
 
 	{
-		name: 'Twitter',
+		name: 'LinkedIn',
 		url: 'https://github.com/danielcgilibert/blog-template',
-		icon: TwitterIcon
+		icon: LinkedinIcon
 	}
 ]
 ---
 
 <header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-auto' href='/'>Home</a>
+	<a class='text-lg mr-auto flex items-center' href='/'>
+		<Image src={Shape} alt='Logo' />
+		<span class='font-k2d font-bold text-3xl tracking-[-2px] dark:text-white'>thetechweeb</span>
+	</a>
 
 	<div
 		id='astro-header-drawer'

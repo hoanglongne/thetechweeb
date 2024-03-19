@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-	/* body {
+
+	body {
 		transition: background-color 0.5s ease;
-	} */
+	}
 
 	.prose code {
 		@apply text-base;
@@ -18,15 +19,16 @@
 	h4,
 	h5,
 	h6 {
-		@apply text-zinc-800 dark:text-zinc-100   !important;
+		@apply text-zinc-800 dark:text-zinc-100 !important;
 	}
 
 	html.dark .shiki,
 	html.dark .shiki span {
-	  color: var(--shiki-dark) !important;
-	  background-color: theme(colors.gray.900) !important;
+		color: var(--shiki-dark) !important;
+		background-color: theme(colors.gray.800) !important;
 	}
 }
+
 
 .glass {
 	background: rgba(57, 56, 56, 0.52);
